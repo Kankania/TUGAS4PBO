@@ -1,0 +1,23 @@
+class MathOperation {
+    // Method untuk menghitung luas persegi
+    double calculateArea(double side) {
+        return side * side;
+    }
+
+    // Method untuk menghitung luas segitiga
+    double calculateArea(double base, double height) {
+        return 0.5 * base * height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MathOperation math = new MathOperation();
+
+        // Menghitung luas persegi dengan sisi 5
+        System.out.println("Luas persegi: " + math.calculateArea(5));
+
+        // Menghitung luas segitiga dengan alas 4 dan tinggi 3
+        System.out.println("Luas segitiga: " + math.calculateArea(4, 3));
+    }
+}

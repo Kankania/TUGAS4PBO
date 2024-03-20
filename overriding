@@ -1,0 +1,31 @@
+class Fruit {
+    void taste() {
+        System.out.println("Rasa buah umumnya manis atau asam.");
+    }
+}
+
+class Apple extends Fruit {
+    @Override
+    void taste() {
+        System.out.println("Rasa apel adalah manis dan sedikit asam.");
+    }
+}
+
+class Orange extends Fruit {
+    @Override
+    void taste() {
+        System.out.println("Rasa jeruk adalah asam manis yang segar.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Fruit fruit1 = new Fruit();
+        Fruit fruit2 = new Apple();
+        Fruit fruit3 = new Orange();
+
+        fruit1.taste(); // Output: Rasa buah umumnya manis atau asam.
+        fruit2.taste(); // Output: Rasa apel adalah manis dan sedikit asam.
+        fruit3.taste(); // Output: Rasa jeruk adalah asam manis yang segar.
+    }
+}

@@ -1,0 +1,31 @@
+class Shape {
+    void draw() {
+        System.out.println("Menggambar bentuk...");
+    }
+}
+
+class Circle extends Shape {
+    @Override
+    void draw() {
+        System.out.println("Menggambar lingkaran...");
+    }
+}
+
+class Rectangle extends Shape {
+    @Override
+    void draw() {
+        System.out.println("Menggambar persegi panjang...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Shape shape1 = new Shape();
+        Shape shape2 = new Circle();
+        Shape shape3 = new Rectangle();
+
+        shape1.draw(); // Output: Menggambar bentuk...
+        shape2.draw(); // Output: Menggambar lingkaran...
+        shape3.draw(); // Output: Menggambar persegi panjang...
+    }
+}
